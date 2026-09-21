@@ -24,5 +24,3 @@ MODEL_PATH = ROOT / 'models_saved' / 'health_model.joblib'
 MODEL_CARD_PATH = ROOT / 'models_saved' / 'model_card.json'
 DATA_PATH = ROOT / 'data' / 'synthetic' / 'bridge_trajectories.csv'
 
-for folder in ['data/raw', 'data/processed', 'data/synthetic', 'models_saved']:
-    (ROOT / folder).mkdir(parents=True, exist_ok=True)
