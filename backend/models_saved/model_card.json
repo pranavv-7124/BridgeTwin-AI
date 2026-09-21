@@ -1,0 +1,380 @@
+{
+  "status": "Trained",
+  "version": "BT-1.0",
+  "trained_at": "2026-09-21T08:55:08.115445+00:00",
+  "name": "Random Forest",
+  "algorithm": "RandomForestRegressor",
+  "sklearn_version": "1.8.0",
+  "prediction_target": "One-year health reconstructed from learned annual deterioration, with physical bounds.",
+  "features": [
+    "age",
+    "traffic_load",
+    "heavy_vehicle_percentage",
+    "temperature",
+    "rainfall",
+    "environmental_exposure",
+    "cumulative_load",
+    "last_maintenance_years",
+    "maintenance_delay",
+    "previous_health",
+    "material_factor",
+    "protection",
+    "type_code"
+  ],
+  "total_records": 15360,
+  "training_records": 9216,
+  "real_records": 0,
+  "synthetic_records": 15360,
+  "validation_strategy": "Independent bridge groups: 60% train / 15% validation / 10% calibration / 15% test (rounded by bridge count). Real holdouts when real data are supplied.",
+  "evaluation_source": "SYNTHETIC",
+  "split_counts": {
+    "train": 9216,
+    "validation": 2304,
+    "calibration": 1536,
+    "test": 2304
+  },
+  "split_bridges": {
+    "train": [
+      "SYN-0000",
+      "SYN-0001",
+      "SYN-0003",
+      "SYN-0005",
+      "SYN-0007",
+      "SYN-0008",
+      "SYN-0010",
+      "SYN-0013",
+      "SYN-0014",
+      "SYN-0017",
+      "SYN-0020",
+      "SYN-0021",
+      "SYN-0023",
+      "SYN-0025",
+      "SYN-0028",
+      "SYN-0033",
+      "SYN-0034",
+      "SYN-0035",
+      "SYN-0037",
+      "SYN-0038",
+      "SYN-0039",
+      "SYN-0040",
+      "SYN-0043",
+      "SYN-0044",
+      "SYN-0046",
+      "SYN-0047",
+      "SYN-0048",
+      "SYN-0049",
+      "SYN-0050",
+      "SYN-0052",
+      "SYN-0053",
+      "SYN-0054",
+      "SYN-0057",
+      "SYN-0058",
+      "SYN-0059",
+      "SYN-0061",
+      "SYN-0062",
+      "SYN-0063",
+      "SYN-0064",
+      "SYN-0068",
+      "SYN-0070",
+      "SYN-0071",
+      "SYN-0072",
+      "SYN-0073",
+      "SYN-0074",
+      "SYN-0077",
+      "SYN-0079",
+      "SYN-0080",
+      "SYN-0083",
+      "SYN-0086",
+      "SYN-0087",
+      "SYN-0088",
+      "SYN-0089",
+      "SYN-0091",
+      "SYN-0092",
+      "SYN-0093",
+      "SYN-0095",
+      "SYN-0099",
+      "SYN-0102",
+      "SYN-0103",
+      "SYN-0106",
+      "SYN-0107",
+      "SYN-0109",
+      "SYN-0110",
+      "SYN-0111",
+      "SYN-0112",
+      "SYN-0113",
+      "SYN-0116",
+      "SYN-0117",
+      "SYN-0118",
+      "SYN-0119",
+      "SYN-0120",
+      "SYN-0121",
+      "SYN-0122",
+      "SYN-0124",
+      "SYN-0125",
+      "SYN-0129",
+      "SYN-0130",
+      "SYN-0132",
+      "SYN-0133",
+      "SYN-0134",
+      "SYN-0137",
+      "SYN-0140",
+      "SYN-0144",
+      "SYN-0145",
+      "SYN-0148",
+      "SYN-0149",
+      "SYN-0150",
+      "SYN-0152",
+      "SYN-0153",
+      "SYN-0154",
+      "SYN-0155",
+      "SYN-0156",
+      "SYN-0157",
+      "SYN-0158",
+      "SYN-0159"
+    ],
+    "validation": [
+      "SYN-0002",
+      "SYN-0004",
+      "SYN-0006",
+      "SYN-0011",
+      "SYN-0024",
+      "SYN-0031",
+      "SYN-0032",
+      "SYN-0045",
+      "SYN-0055",
+      "SYN-0060",
+      "SYN-0066",
+      "SYN-0075",
+      "SYN-0082",
+      "SYN-0084",
+      "SYN-0085",
+      "SYN-0108",
+      "SYN-0115",
+      "SYN-0123",
+      "SYN-0127",
+      "SYN-0135",
+      "SYN-0141",
+      "SYN-0146",
+      "SYN-0147",
+      "SYN-0151"
+    ],
+    "calibration": [
+      "SYN-0016",
+      "SYN-0022",
+      "SYN-0026",
+      "SYN-0042",
+      "SYN-0078",
+      "SYN-0081",
+      "SYN-0090",
+      "SYN-0094",
+      "SYN-0097",
+      "SYN-0101",
+      "SYN-0105",
+      "SYN-0126",
+      "SYN-0131",
+      "SYN-0136",
+      "SYN-0139",
+      "SYN-0143"
+    ],
+    "test": [
+      "SYN-0009",
+      "SYN-0012",
+      "SYN-0015",
+      "SYN-0018",
+      "SYN-0019",
+      "SYN-0027",
+      "SYN-0029",
+      "SYN-0030",
+      "SYN-0036",
+      "SYN-0041",
+      "SYN-0051",
+      "SYN-0056",
+      "SYN-0065",
+      "SYN-0067",
+      "SYN-0069",
+      "SYN-0076",
+      "SYN-0096",
+      "SYN-0098",
+      "SYN-0100",
+      "SYN-0104",
+      "SYN-0114",
+      "SYN-0128",
+      "SYN-0138",
+      "SYN-0142"
+    ]
+  },
+  "comparisons": [
+    {
+      "name": "Random Forest",
+      "validation": {
+        "mae": 0.1874707550681074,
+        "rmse": 0.2935384673457867,
+        "r2": 0.999907402290245
+      }
+    },
+    {
+      "name": "Gradient Boosting",
+      "validation": {
+        "mae": 0.2159349625089324,
+        "rmse": 0.34422609711264646,
+        "r2": 0.99987266206985
+      }
+    }
+  ],
+  "test_metrics": {
+    "mae": 0.11444475136185497,
+    "rmse": 0.20118548203772046,
+    "r2": 0.9999663021730099
+  },
+  "raw_ml_test_metrics": {
+    "mae": 0.17199576744801712,
+    "rmse": 0.29829517015266227,
+    "r2": 0.9999259199846855
+  },
+  "persistence_baseline": {
+    "mae": 2.3782973090277775,
+    "rmse": 3.2601220686728234,
+    "r2": 0.9911513637255454
+  },
+  "physics_baseline": {
+    "mae": 0.10214535590277772,
+    "rmse": 0.18127418932216932,
+    "r2": 0.9999726422382209
+  },
+  "interval": {
+    "level": 0.9,
+    "one_year_absolute_residual": 0.2867074136644021,
+    "test_coverage": 0.8802083333333334,
+    "method": "Split calibration residual band; group dependence limits coverage claims. Multi-year bands widen by sqrt(years) and are illustrative, not calibrated."
+  },
+  "importance": [
+    {
+      "feature": "previous_health",
+      "importance": 0.7210093365084117
+    },
+    {
+      "feature": "last_maintenance_years",
+      "importance": 0.1558054253737187
+    },
+    {
+      "feature": "maintenance_delay",
+      "importance": 0.04373165730649184
+    },
+    {
+      "feature": "age",
+      "importance": 0.02350962110177752
+    },
+    {
+      "feature": "material_factor",
+      "importance": 0.01663869029875862
+    },
+    {
+      "feature": "protection",
+      "importance": 0.015084205955944898
+    },
+    {
+      "feature": "type_code",
+      "importance": 0.009771225062634002
+    },
+    {
+      "feature": "traffic_load",
+      "importance": 0.005345881594233591
+    },
+    {
+      "feature": "cumulative_load",
+      "importance": 0.004521440201636172
+    },
+    {
+      "feature": "heavy_vehicle_percentage",
+      "importance": 0.002252423112393252
+    },
+    {
+      "feature": "rainfall",
+      "importance": 0.001026049825674232
+    },
+    {
+      "feature": "temperature",
+      "importance": 0.0008580652924800811
+    },
+    {
+      "feature": "environmental_exposure",
+      "importance": 0.0004459783658453641
+    }
+  ],
+  "training_medians": {
+    "age": 23.647109077118287,
+    "traffic_load": 66.10634812756703,
+    "heavy_vehicle_percentage": 23.60354224331828,
+    "temperature": 28.94109393029739,
+    "rainfall": 1747.2468969629363,
+    "environmental_exposure": 0.6653204154384729,
+    "cumulative_load": 21.194806296726394,
+    "last_maintenance_years": 18.948904982247882,
+    "maintenance_delay": 0.0,
+    "previous_health": 30.805100000000003,
+    "material_factor": 1.126115851636099,
+    "protection": 0.0,
+    "type_code": 1.0
+  },
+  "training_ranges": {
+    "age": [
+      2.4181196945749703,
+      55.95320353632997
+    ],
+    "traffic_load": [
+      23.13677035529826,
+      100.0
+    ],
+    "heavy_vehicle_percentage": [
+      5.112272850471351,
+      65.60547236846196
+    ],
+    "temperature": [
+      10.136736320034936,
+      42.0
+    ],
+    "rainfall": [
+      359.1155053544667,
+      2800.0
+    ],
+    "environmental_exposure": [
+      0.158579761305519,
+      0.95
+    ],
+    "cumulative_load": [
+      1.1871972723534878,
+      68.49720966768034
+    ],
+    "last_maintenance_years": [
+      0.0,
+      52.18650469689087
+    ],
+    "maintenance_delay": [
+      0.0,
+      6.0
+    ],
+    "previous_health": [
+      0.0,
+      98.0
+    ],
+    "material_factor": [
+      0.6506566931180565,
+      1.599542204671902
+    ],
+    "protection": [
+      0.0,
+      0.9
+    ],
+    "type_code": [
+      0.0,
+      3.0
+    ]
+  },
+  "limitations": [
+    "Synthetic test performance measures fit to this generator, not real bridge accuracy.",
+    "Health is a dimensionless condition proxy; risk is not failure probability.",
+    "Physics-inspired coefficients and maintenance costs are uncalibrated demo assumptions.",
+    "Shared generator and physics baseline make this a controlled experiment, not independent engineering validation.",
+    "Global impurity importance is not a local causal explanation."
+  ]
+}
